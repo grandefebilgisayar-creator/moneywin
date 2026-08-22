@@ -258,13 +258,14 @@
     <section id="contact" class="wrap">
       <h2>Start with one automation</h2>
       <p style="color: var(--muted); max-width: 600px;">Tell us your most repeated task. We'll show you a concrete plan in the discovery call — no obligation.</p>
-      <form id="contactForm">
+      <form id="contactForm" action="https://formspree.io/f/moneywin-contact" method="POST">
         <input id="name" placeholder="Your name" required style="background:#0b1220;color:#e2e8f0;border:1px solid #1f2a40;border-radius:8px;padding:10px;width:100%;margin:6px 0;" />
         <input id="email" placeholder="Email" required style="background:#0b1220;color:#e2e8f0;border:1px solid #1f2a40;border-radius:8px;padding:10px;width:100%;margin:6px 0;" />
         <input id="task" placeholder="Your most repeated task" required style="background:#0b1220;color:#e2e8f0;border:1px solid #1f2a40;border-radius:8px;padding:10px;width:100%;margin:6px 0;" />
         <button class="cta" type="submit">Request discovery call</button>
       </form>
       <p id="formStatus" style="color: var(--accent); margin-top: 10px;"></p>
+          <input type="hidden" name="_subject" value="MoneyWin contact form">
     </section>
   </main>
 
