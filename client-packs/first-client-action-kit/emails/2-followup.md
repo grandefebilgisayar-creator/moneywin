@@ -1,6 +1,7 @@
 Subject: Quick follow-up
 Hi [Name],
-One clear option for your business:
+Following up.
+One clear option:
 - current pain
 - one automation that fixes it
 - rough timeline and price

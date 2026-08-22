@@ -1,0 +1,6 @@
+name,email,company,website,hint,stage,notes
+Sunshine Cafe,owner@sunshine-cafe.example,Sunshine Cafe,https://sunshine-cafe.example,Cafe with social media,lead,"manual inventory + promo posts"
+Green Clinic,admin@greenclinic.example,Green Clinic,https://greenclinic.example,small clinic,lead,"appointment reminders"
+City Cleaners,info@citycleaners.example,City Cleaners,https://citycleaners.example,cleaning service,lead,"quotes + scheduling"
+Quick Fix Plumbing,contact@quickfix.example,Quick Fix Plumbing,https://quickfix.example,local service,lead,"invoice + reminders"
+Style Studio,hello@stylestudio.example,Style Studio,https://stylestudio.example,retail,lead,"lead follow-ups"
