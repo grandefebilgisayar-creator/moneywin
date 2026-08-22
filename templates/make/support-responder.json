@@ -1,0 +1,9 @@
+{
+  "name": "moneywin-support-responder",
+  "flow": [
+    { "module": "webhook", "action": "catch", "settings": { "path": "support" } },
+    { "module": "router", "action": "route", "settings": { "rules": [{ "field": "body", "contains": "invoice", "then": "billing" }, { "field": "body", "contains": "ship", "then": "shipping" }, { "field": "body", "contains": "other", "then": "other" }] } },
+    { "module": "email", "action": "send", "settings": { "to": "={{from}}", "subject": "We received your request", "body": "{{reply}}" } },
+    { "module": "webhook", "action": "respond", "settings": { "status": 200, "body": "{ \"status\": \"received\" }" } }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SupportResponderOutput",
+  "type": "object",
+  "required": ["replyDraft", "ticketStatus", "escalationFlag"],
+  "properties": {
+    "replyDraft": { "type": "string" },
+    "ticketStatus": { "type": "string" },
+    "escalationFlag": { "type": "boolean" }
+  }
+}

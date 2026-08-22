@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LeadScraperOutput",
+  "type": "object",
+  "required": ["count", "records"],
+  "properties": {
+    "count": { "type": "integer" },
+    "records": { "type": "array" }
+  }
+}

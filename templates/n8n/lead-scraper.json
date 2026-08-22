@@ -1,0 +1,14 @@
+{
+  "name": "moneywin-lead-scraper",
+  "nodes": [
+    { "name": "Manual Trigger", "type": "n8n-nodes-base.manualTrigger" },
+    { "name": "Fetch Leads", "type": "n8n-nodes-base.httpRequest", "parameters": { "method": "GET", "url": "https://api.example.com/leads" } },
+    { "name": "Normalize", "type": "n8n-nodes-base.function", "parameters": { "functionCode": "const items = []; for (const item of $input.all()) { items.push({ json: { name: item.json.name || '', email: item.json.email || '', source: item.json.source || '' } }); } return items;" } },
+    { "name": "Save CSV", "type": "n8n-nodes-base.spreadsheetFile", "parameters": { "operation": "write", "fileFormat": "csv", "fileName": "leads.csv" } }
+  ],
+  "connections": {
+    "Manual Trigger": { "main": [{ "node": "Fetch Leads", "type": "main", "index": 0 }] },
+    "Fetch Leads": { "main": [{ "node": "Normalize", "type": "main", "index": 0 }] },
+    "Normalize": { "main": [{ "node": "Save CSV", "type": "main", "index": 0 }] }
+  }
+}

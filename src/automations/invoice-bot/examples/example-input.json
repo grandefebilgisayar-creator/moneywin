@@ -1,0 +1,6 @@
+{
+  "customerEmail": "client@example.com",
+  "amount": "120.00",
+  "dueDate": "2026-09-05",
+  "currency": "USD"
+}

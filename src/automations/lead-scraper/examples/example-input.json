@@ -1,0 +1,5 @@
+{
+  "source": "https://example.com/leads",
+  "fields": ["name", "email", "company"],
+  "outputFormat": "csv"
+}

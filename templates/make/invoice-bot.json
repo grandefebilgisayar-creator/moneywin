@@ -1,0 +1,9 @@
+{
+  "name": "moneywin-invoice-bot",
+  "flow": [
+    { "module": "scheduler", "action": "run", "settings": { "cron": "0 9 * * 1-5" } },
+    { "module": "http", "action": "get", "settings": { "url": "https://api.example.com/invoices/due" } },
+    { "module": "email", "action": "send", "settings": { "to": "{{email}}", "subject": "Invoice", "body": "Amount: {{amount}}" } },
+    { "module": "logger", "action": "log", "settings": { "message": "Invoice sent to {{email}}" } }
+  ]
+}

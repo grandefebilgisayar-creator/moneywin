@@ -1,0 +1,13 @@
+{
+  "name": "moneywin-support-responder",
+  "nodes": [
+    { "name": "Webhook", "type": "n8n-nodes-base.webhook", "parameters": { "path": "support", "responseMode": "responseNode" } },
+    { "name": "Classify", "type": "n8n-nodes-base.function", "parameters": { "functionCode": "const categories = ['billing', 'shipping', 'other']; const text = ($json.body || '').toLowerCase(); const category = categories.find(c => text.includes(c)) || 'other'; return [{ json: { category, reply: 'Thanks for reaching out. We will follow up soon.', escalate: category === 'billing' } }];" } },
+    { "name": "Reply", "type": "n8n-nodes-base.emailSend", "parameters": { "fromEmail": "support@moneywin", "toEmail": "={{ $json.from }}", "subject": "We received your request", "text": "{{ $json.reply }}" } },
+    { "name": "Response", "type": "n8n-nodes-base.respondToWebhook", "parameters": { "respondWith": "json", "responseBody": "{ \"status\": \"received\", \"category\": \"{{ $json.category }}\" }" } }
+  ],
+  "connections": {
+    "Webhook": { "main": [{ "node": "Classify", "type": "main", "index": 0 }] },
+    "Classify": { "main": [{ "node": "Reply", "type": "main", "index": 0 }, { "node": "Response", "type": "main", "index": 0 }] }
+  }
+}

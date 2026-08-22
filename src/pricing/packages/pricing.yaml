@@ -1,0 +1,29 @@
+packages:
+  - name: Starter
+    price: 300
+    currency: USD
+    includes:
+      - 1 automation
+      - basic runbook
+      - 1 revision
+    timeline: 72 hours
+    support: email support for 14 days
+  - name: Growth
+    price: 800
+    currency: USD
+    includes:
+      - 3 automations
+      - email support
+      - 2 revisions
+    timeline: 1 week
+    support: email support for 30 days
+  - name: Scale
+    price: 2000
+    currency: USD
+    cadence: monthly
+    includes:
+      - ongoing automations
+      - priority support
+      - monthly review
+    timeline: ongoing
+    support: prioritized email and chat

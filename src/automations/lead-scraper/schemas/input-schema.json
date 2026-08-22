@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "LeadScraperInput",
+  "type": "object",
+  "required": ["source", "fields"],
+  "properties": {
+    "source": { "type": "string" },
+    "fields": { "type": "array", "items": { "type": "string" } },
+    "outputFormat": { "type": "string", "enum": ["csv", "json"], "default": "csv" }
+  }
+}

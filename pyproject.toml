@@ -1,0 +1,5 @@
+[project]
+name = "moneywin"
+version = "0.1.0"
+description = "MoneyWin AI Automation Agency"
+requires-python = ">=3.11"

@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "InvoiceBotInput",
+  "type": "object",
+  "required": ["customerEmail", "amount", "dueDate"],
+  "properties": {
+    "customerEmail": { "type": "string", "format": "email" },
+    "amount": { "type": "string" },
+    "dueDate": { "type": "string", "format": "date" },
+    "currency": { "type": "string", "default": "USD" }
+  }
+}

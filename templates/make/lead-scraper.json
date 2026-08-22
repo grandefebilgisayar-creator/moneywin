@@ -1,0 +1,9 @@
+{
+  "name": "moneywin-lead-scraper",
+  "flow": [
+    { "module": "webhook", "action": "catch", "settings": {} },
+    { "module": "http", "action": "get", "settings": { "url": "https://api.example.com/leads" } },
+    { "module": "tools", "action": "textAggregator", "settings": { "source": "{{body}}" } },
+    { "module": "csv", "action": "write", "settings": { "filename": "leads.csv" } }
+  ]
+}
