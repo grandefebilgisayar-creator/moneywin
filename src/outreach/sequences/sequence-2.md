@@ -1,4 +1,4 @@
 # Sequence 2 — Referral warm
-- Day 1: src/outreach/emails/referral-ask.md
-- Day 5: src/outreach/emails/discovery-invite.md
-- Day 12: src/outreach/emails/follow-up-1.md
+- Day 1: referral-ask
+- Day 5: discovery-invite
+- Day 12: follow-up-1

@@ -1,5 +1,6 @@
 # Sequence 1 — Cold outreach
-- Day 1: src/outreach/emails/cold-outreach-1.md
-- Day 4: src/outreach/emails/follow-up-1.md
-- Day 8: src/outreach/emails/discovery-invite.md
-- Day 15: src/outreach/emails/referral-ask.md
+- Day 1: cold-outreach-1
+- Day 4: value-lite-followup
+- Day 8: follow-up-1
+- Day 15: discovery-invite
+- Day 25: break-up-email
