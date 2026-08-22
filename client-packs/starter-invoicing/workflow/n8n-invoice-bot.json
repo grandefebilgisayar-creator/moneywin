@@ -1,0 +1,30 @@
+{
+  "name": "moneywin-invoice-bot",
+  "nodes": [
+    {
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "parameters": { "rule": { "interval": [{ "field": "cronExpression", "value": "0 9 * * 1-5" }] } }
+    },
+    {
+      "name": "Prepare Invoice",
+      "type": "n8n-nodes-base.function",
+      "parameters": { "functionCode": "const items = [{ json: { customerEmail: '', amount: '', dueDate: '', currency: 'USD' } }]; return items;" }
+    },
+    {
+      "name": "Send Invoice Email",
+      "type": "n8n-nodes-base.emailSend",
+      "parameters": { "fromEmail": "billing@moneywin", "toEmail": "={{ $json.customerEmail }}", "subject": "Invoice", "text": "Invoice amount: {{ $json.amount }}" }
+    },
+    {
+      "name": "Log Result",
+      "type": "n8n-nodes-base.set",
+      "parameters": { "keepOnlySet": false }
+    }
+  ],
+  "connections": {
+    "Schedule Trigger": { "main": [{ "node": "Prepare Invoice", "type": "main", "index": 0 }] },
+    "Prepare Invoice": { "main": [{ "node": "Send Invoice Email", "type": "main", "index": 0 }] },
+    "Send Invoice Email": { "main": [{ "node": "Log Result", "type": "main", "index": 0 }] }
+  }
+}
