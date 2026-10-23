@@ -1,6 +1,6 @@
 name,email,company,website,hint,stage,notes
-Sunshine Cafe,owner@sunshine-cafe.example,Sunshine Cafe,https://sunshine-cafe.example,Cafe with social media,contacted,"manual inventory + promo posts"
-Green Clinic,admin@greenclinic.example,Green Clinic,https://greenclinic.example,small clinic,contacted,"appointment reminders"
-City Cleaners,info@citycleaners.example,City Cleaners,https://citycleaners.example,cleaning service,contacted,"quotes + scheduling"
-Quick Fix Plumbing,contact@quickfix.example,Quick Fix Plumbing,https://quickfix.example,local service,contacted,"invoice + reminders"
-Style Studio,hello@stylestudio.example,Style Studio,https://stylestudio.example,retail,contacted,"lead follow-ups"
+Sunshine Cafe,owner@sunshine-cafe.example,Sunshine Cafe,https://sunshine-cafe.example,Cafe with social media,contacted,manual inventory + promo posts | contacted 2026-10-23
+Green Clinic,admin@greenclinic.example,Green Clinic,https://greenclinic.example,small clinic,contacted,appointment reminders
+City Cleaners,info@citycleaners.example,City Cleaners,https://citycleaners.example,cleaning service,contacted,quotes + scheduling
+Quick Fix Plumbing,contact@quickfix.example,Quick Fix Plumbing,https://quickfix.example,local service,contacted,invoice + reminders
+Style Studio,hello@stylestudio.example,Style Studio,https://stylestudio.example,retail,contacted,lead follow-ups
