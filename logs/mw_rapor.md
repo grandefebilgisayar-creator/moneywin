@@ -1,4 +1,4 @@
-# MoneyWin Pipeline Raporu — 2026-10-28
+# MoneyWin Pipeline Raporu — 2026-10-30
 
 Toplam lead: **5**
 
@@ -10,7 +10,7 @@ Toplam lead: **5**
 
 | Lead | Email | Gun | Adim | Sablon | Gecikme |
 |---|---|---|---|---|---|
-| Sunshine Cafe | owner@sunshine-cafe.example | 5 | discovery | emails/3-discovery.md | 0 gün |
+| Sunshine Cafe | owner@sunshine-cafe.example | 7 | discovery | emails/3-discovery.md | 0 gün |
 
 Hint'ler (kisisellestirme icin):
 - **Sunshine Cafe** — Cafe with social media
@@ -20,4 +20,4 @@ Hint'ler (kisisellestirme icin):
 - Cold email gonderilmemis: Green Clinic, City Cleaners, Quick Fix Plumbing, Style Studio
 - Gonderim oncesi ilk 3 taslagi kullaniciya goster (kurallar: moneywin-outreach)
 
-_Olusturulma: 2026-10-28 10:46_
+_Olusturulma: 2026-10-30 17:06_
